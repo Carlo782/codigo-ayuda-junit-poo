@@ -9,13 +9,13 @@ public class Calculadora {
 
     public int sum(int a, int b) {
 
-        System.out.println("Suma de " + a + " + " + b + " = " + (a + b)+"\n");
+        System.out.println("Suma de " + a + " + " + b + " = " + (a + b));
         return (a + b);
     }
 
     public int res(int a, int b) {
 
-        System.out.println("Resta de " + a + " - " + b + " = " + (a - b)+"\n");
+        System.out.println("Resta de " + a + " - " + b + " = " + (a - b));
         return (a - b);
     }
 

@@ -16,7 +16,7 @@ public class CalculadoraTest {
     //Sección que se ejecuta antes que todos los test, se inicializa la variable cal
     @BeforeAll
     static void setUp() {
-        System.out.println("Se ejecuta antes de todos los test");
+        System.out.println("Se ejecuta antes de todos los test\n");
         cal = new Calculadora("Calculadora");
     }
 
@@ -32,6 +32,7 @@ public class CalculadoraTest {
     @Test
     void testGetNombre() {
         Assertions.assertEquals("Calculadora", cal.getNombre());
+        System.out.println("Nombre "+cal.getNombre());
     }
 
     //Test que verifica la función setNombre de la calculadora, se cambia el nombre de la calculadora a "Calculadora 2"
@@ -40,6 +41,7 @@ public class CalculadoraTest {
     void testSetNombre() {
         cal.setNombre("Calculadora 2");
         Assertions.assertEquals("Calculadora 2", cal.getNombre());
+        System.out.println("Nombre "+cal.getNombre());
     }
 
     //Test que verifica si la función res de la calculadora es correcta, llamando la función res con los valores 5 y 3
@@ -64,7 +66,7 @@ public class CalculadoraTest {
     //Funcion que se ejecuta después de cada test, se reinicia la variable cal
     @AfterEach
     void tearDownEach() {
-        System.out.println("Se ejecuta después de cada test");
+        System.out.println("Se ejecuta después de cada test \n");
         cal = null;
     }
 
